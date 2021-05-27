@@ -1,0 +1,8 @@
+google-cloud
+google-cloud-logging==1.15.1
+google-cloud-core==1.4.1
+httplib2==0.15.0
+google-cloud-storage
+google-cloud-bigquery
+apache_beam[gcp]
+google-api-python-client

@@ -1,0 +1,7 @@
+####Requirement.txt############
+# Function dependencies, for example:
+# package>=version
+google-cloud 
+google-cloud-bigquery
+apache-beam[gcp]==2.24.0
+httplib2==0.15.0

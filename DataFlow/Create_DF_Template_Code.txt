@@ -1,0 +1,12 @@
+python3 data_ingestion.py \
+	--runner DataflowRunner \
+	--project third-campus-303308 \
+	--job_name job-data-ingestion-df \
+	--region europe-west2 \
+	--worker_region europe-west2 \
+	--num_workers 1 \
+	--max_num_workers 16 \
+	--requirements_file requirements.txt \
+	--staging_location gs://third-campus-303308-df-bucket/staging/ \
+	--temp_location gs://third-campus-303308-df-bucket/temp-location/ \
+	--template_location gs://third-campus-303308-df-bucket/sample-template/template_data_ingestion_df
