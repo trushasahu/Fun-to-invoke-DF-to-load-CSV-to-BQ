@@ -8,6 +8,9 @@ Cloud function triggered when a CSV file placed into the triggered landing stora
 
 2-Another for Dataflow to store the temporary files during processing i.e. third-campus-303308-df-bucket
 
+### Create dataset in bigquery
+1-create dataset 'ds_bigmart' from bigquery console
+
 ### Create dataflow template using content in DataFlow folder
 1- Put data_ingestion.py & requirements.txt files in the cloud shell 
 
@@ -36,7 +39,11 @@ Cloud function triggered when a CSV file placed into the triggered landing stora
   
   -Entry point : startDataflowProcess   i.e. function name of the main.py code
   
-### Place the csv file into the  third-campus-303308-cf-landing  bucket to tigger the function and dataflow to load data into bigquery table.
+### Place the csv file (bigmart_data.csv) into the  third-campus-303308-cf-landing  bucket to tigger the function and dataflow to load data into bigquery table.
+
+### Once Dataflow executed successfully, Please check in Bigquery console
+  -The table (ds_bigmart.big_mart_cf) should be created with the data from csv
+
   
   
   
